@@ -3,7 +3,8 @@ import "./style.scss";
 import Introduction from "./Introduction";
 import SetUp from "./SetUp";
 import TopRating from "./TopRatedPRT";
-import RecentUsers from "./RecentUsers"; // Убедитесь, что этот импорт остается
+import RecentUsers from "./RecentUsers"; 
+import Footer from "../Footer";
 
 function Home() {
     return (
@@ -11,7 +12,8 @@ function Home() {
             <Introduction />
             <TopRating />
             <SetUp />
-            <RecentUsers /> {/* Убедитесь, что RecentUsers также отображается */}
+            <RecentUsers /> {}
+            <Footer />
         </div>
     );
 }

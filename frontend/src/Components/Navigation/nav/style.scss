@@ -1,0 +1,32 @@
+@import "../../../assets/styles/_setting.scss";
+
+nav {
+    background-color: $violet;
+    padding: 10px 20px;
+    @include flex(row, center, space-between);
+    
+    .links {
+        @include flex(row, center);
+        gap: 20px;
+        width: 100%; 
+
+        a {
+            color: $light;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            flex: 1; 
+
+            &.active {
+                background-color: $red;
+                color: white;
+            }
+
+            &:hover {
+                background-color: darken($red, 10%);
+                color: white;
+                transition: background-color 0.3s ease;
+            }
+        }
+    }
+}

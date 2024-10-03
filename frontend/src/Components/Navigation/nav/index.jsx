@@ -1,6 +1,6 @@
 import "../../../assets/styles/_setting.scss"
 import { Link, NavLink } from "react-router-dom";
-
+import IMG from "../../../assets/images/NavbarImg/logo.png"
 import "./style.scss"
 
 
@@ -8,12 +8,15 @@ function Nav() {
     return (
         <nav>
             <div className="links">
-                        <NavLink to="/" activeclassname="active">Home</NavLink>
-                        <NavLink to="about" activeclassname="active">About</NavLink>
-                        <NavLink to="products" activeclassname="active">Products</NavLink>
-                        <NavLink to="blog" activeclassname="active">Blog</NavLink>
-                        <NavLink to="shop" activeclassname="active">Shop</NavLink>
-                        <NavLink to="contact" activeclassname="active">Contact</NavLink>
+                <NavLink to="/" activeclassname="active"><img src={IMG} alt="" /></NavLink>
+                <NavLink to="home" activeclassname="active">Home</NavLink>
+                <NavLink to="portfolios" activeclassname="active">Portfolios</NavLink>
+                <NavLink to="community" activeclassname="active">Community</NavLink>
+                <NavLink to="aboutUs" activeclassname="active">About Us</NavLink>
+                <div className="buttons">
+                    <button className="signup">Sign Up</button>
+                    <button className="login">Login</button>
+                </div>
             </div>
         </nav>
     )

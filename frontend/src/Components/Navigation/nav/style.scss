@@ -1,15 +1,17 @@
 @import "../../../assets/styles/_setting.scss";
 
 nav {
-    background-color: $violet;
-    padding: 10px 20px;
+    background-color: #010314;
+    padding: 10px 50px;
+    width: 100%;
+    height: 90px;
     @include flex(row, center, space-between);
     
     .links {
-        @include flex(row, center);
+        @include grid(6, 1fr, 20px);
+        grid-template-columns: 4fr 1fr 1fr 1fr 1fr 4fr;
         gap: 20px;
         width: 100%; 
-
         a {
             color: $light;
             text-decoration: none;
@@ -18,14 +20,31 @@ nav {
             flex: 1; 
 
             &.active {
-                background-color: $red;
+                // background-color: $red;
                 color: white;
             }
 
             &:hover {
-                background-color: darken($red, 10%);
-                color: white;
-                transition: background-color 0.3s ease;
+                color: $violet;
+            }
+        }
+        .buttons{
+            display: flex;
+            flex: 1;
+            justify-content:flex-end;
+            gap: 10px;
+            button {
+                background-color: transparent;
+                padding: 10px 25px;
+                border-radius: 20px;
+                border: 2px #2A2B3A solid;
+                color: $light;
+                cursor: pointer;
+            }
+            
+            & button:hover {
+                border: 2px #7241FF solid;
+                box-shadow: 1px 1px 10px #7241FF;
             }
         }
     }

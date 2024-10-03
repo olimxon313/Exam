@@ -1,0 +1,85 @@
+@import "../../../assets/styles/_setting.scss";
+
+.recent-users-wrapper {
+    @include flex(column, center, center);
+    gap: 20px;
+    padding: 50px 100px;
+    color: $light;
+
+    h1 {
+        font-size: 40px;
+        color: $light;
+    }
+
+    .users-wrapper-icons {
+        @include flex();
+        gap: 20px;
+        padding: 20px 30px;
+        border-radius: 5px;
+        border: 1px solid #2A2B3A;
+        width: 100%;
+        margin-top: 40px
+    }
+
+    .users-wrapper-details {
+        @include grid(2, 1fr);
+        gap: 30px;
+        padding: 40px 60px;
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 70px;
+        box-shadow: 5px 5px 25px $darkest-blue,
+            -5px -5px 25px $darkest-blue,
+            -5px 5px 25px $darkest-blue,
+            5px -5px 25px $darkest-blue;
+
+        .users-wrapper-details-right {
+            @include flex(column, flex-end, flex-end);
+            gap: 20px;
+            width: 100%;
+        }
+
+        .users-wrapper-details-left {
+            @include flex(column, center, center);
+            gap: 20px;
+            width: 100%;
+
+            .users-wrapper-details-left-content {
+                @include flex(column, flex-start, center);
+                gap: 20px;
+                width: 100%;
+                border-bottom: 1px solid #182542;
+                padding: 50px 0;
+
+                p {
+                    width: 100%;
+                    color: $gray;
+                    font-size: 20px;
+                }
+            }
+
+            .users-wrapper-details-left-icons {
+                display: grid;
+                grid-template-columns: 0.4fr 1.5fr;
+
+                width: 100%;
+
+                h3 {
+                    font-size: 30px;
+                    font-weight: 600;
+                    font-variant: small-caps slashed-zero;
+                }
+
+                p {
+                    font-size: 15px;
+                    color: $gray;
+                    margin: 7px 0 7px;
+                }
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

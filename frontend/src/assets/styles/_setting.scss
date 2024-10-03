@@ -2,7 +2,7 @@ $violet: #7E33E0;
 $violet-light: #F6F5FF;
 $violet-dark: #F1F0FF;
 $dark-violet: #865BFF;
-
+$gray: #77798F;
 
 $green: #08D15F;
 $green-light: #EBF4F3;
@@ -19,6 +19,7 @@ $black: #111;
 $red-gradient: linear-gradient(to right, #FB2E86, #ff8f77);
 $purple-gradient: linear-gradient(to right, #6e56ff, #9b73ff, #7E33E0);
 $green-gradient: linear-gradient(to right, #56c2ff, #08D15F);
+$white-gradient: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%);
 
 
 $danger-modal-bg: radial-gradient(circle, $light 50%, #a084c5);

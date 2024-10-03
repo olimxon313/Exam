@@ -1,0 +1,53 @@
+@import "../../../assets/styles/_setting.scss";
+
+.introduction {
+    gap: 20px;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #010314;
+    text-align: center;
+    padding: 100px 130px;
+    .left {
+        p {
+            background: linear-gradient(to right, red, #9b73ff, #7E33E0);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 25px;
+            font-family: 'Roboto', sans-serif;
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+        }
+        .buttons{
+            button {
+                background-color: transparent;
+                padding: 11px 25px;
+                border-radius: 20px;
+                border: 2px #2A2B3A solid;
+                color: $light;
+                cursor: pointer;
+            }
+            
+            & button:hover {
+                border: 2px #7241FF solid;
+                box-shadow: 1px 1px 10px #7241FF;
+            }
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: 500;
+            color: $light;  
+            margin-bottom: 20px;
+        }
+        .description {
+            color: $light;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+    .right {
+
+        img {
+            width: 100%;
+        }
+    }
+}

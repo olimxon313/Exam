@@ -14,8 +14,8 @@ function Nav() {
                 <NavLink to="community" activeclassname="active">Community</NavLink>
                 <NavLink to="aboutUs" activeclassname="active">About Us</NavLink>
                 <div className="buttons">
-                    <button className="signup">Sign Up</button>
-                    <button className="login">Login</button>
+                    <button className="signup">Sign in</button>
+                    <button className="login">Sign up</button>
                 </div>
             </div>
         </nav>

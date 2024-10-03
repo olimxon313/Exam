@@ -1,0 +1,79 @@
+@import "../../../assets/styles/_setting.scss";
+
+.set-up-title{
+    text-align: center;
+    padding: 50px 0;
+    background-color: #010314;
+    h1 {
+        font-size: 50px;
+        font-weight: 500;
+        color: $light;  
+        margin-bottom: 20px;
+    }
+    p {
+        background: linear-gradient(to right, red, #9b73ff, #7E33E0);
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        font-family: 'Roboto', sans-serif;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+.set-up {
+    padding: 50px 0;
+    background-color: #010314;
+    padding: 50px 130px;
+    
+    .set-up-wrapper {
+        @include grid(2, 1fr);
+        gap: 40px;
+        margin-left: 70px;
+        margin-top: 0px;
+    .left{
+        img {
+            width: 88%;
+        }
+    }
+    .right {
+        .title{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 50px;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(to right, #9b73ff, red, #7E33E0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        }
+        p {
+            color: #77798F;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+        h1{
+            font-size: 45px;
+            font-weight: 500;
+            color: $light;  
+            margin-bottom: 30px;
+        }
+            button {
+                background-color: transparent;
+                padding: 15px 25px;
+                margin-top: 30px;
+                border-radius: 20px;
+                border: 2px #2A2B3A solid;
+                color: $light;
+                cursor: pointer;
+                transition: border 0.3s ease, box-shadow 0.3s ease;
+                &:hover {
+                    border: 2px #7E33E0 solid;
+                    box-shadow: 0 0 10px #7E33E0;
+                }
+        } }
+    }
+
+}

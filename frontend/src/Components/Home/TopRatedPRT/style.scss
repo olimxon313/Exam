@@ -1,0 +1,56 @@
+@import "../../../assets/styles/_setting.scss";
+
+.top-rated-rpt {
+    @include flex(column, center, center);
+    gap: 20px;
+    padding: 50px 100px;
+    background-color: $background-dark;
+    color: $light;
+    
+    h1 {
+        font-size: 30px;
+        display:block;
+    }
+
+    .top-rated-wrapper {
+        @include grid(2, 1fr);
+        padding: 100px 50px;
+        gap: 70px;
+        width: 90%;
+        
+        
+        .top-rated-item {
+            @include flex(column, center, center);
+            gap: 20px;
+            width: 100%;
+            box-shadow: 5px 5px 25px $darkest-blue,
+            -5px -5px 25px $darkest-blue,
+            -5px 5px 25px $darkest-blue,
+            5px -5px 25px $darkest-blue,
+            ;
+            border-radius: 10px;
+            padding: 50px 30px 10px 30px;
+            
+            img {
+                width: 100%;
+            }
+            
+            .top-rated-item-content {
+                @include flex(column, start, center);
+                gap: 20px;
+                width: 100%;
+
+                h4 {
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-variant: small-caps slashed-zero;
+                    color:#627FFF;
+                    
+                }
+                p {
+                    color: #77798F;
+                }
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@ function Nav() {
         <nav>
             <div className="links">
                 <NavLink to="/" activeclassname="active"><img src={IMG} alt="" /></NavLink>
-                <NavLink to="home" activeclassname="active">Home</NavLink>
+                <NavLink to="/" activeclassname="active">Home</NavLink>
                 <NavLink to="portfolios" activeclassname="active">Portfolios</NavLink>
                 <NavLink to="community" activeclassname="active">Community</NavLink>
                 <NavLink to="aboutUs" activeclassname="active">About Us</NavLink>

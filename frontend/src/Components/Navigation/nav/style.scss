@@ -8,10 +8,18 @@ nav {
     @include flex(row, center, space-between);
     
     .links {
-        @include grid(6, 1fr, 20px);
-        grid-template-columns: 4fr 1fr 1fr 1fr 1fr 4fr;
+        @include grid(7, 1fr, 20px);
+        grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 4fr;
         gap: 20px;
         width: 100%; 
+        
+        .logo {
+            width: 100%;
+            cursor:auto;
+            img {
+                cursor: pointer;
+            }
+        }
         a {
             color: $light;
             text-decoration: none;
@@ -20,7 +28,6 @@ nav {
             flex: 1; 
 
             &.active {
-                // background-color: $red;
                 color: white;
             }
 

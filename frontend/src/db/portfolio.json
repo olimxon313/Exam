@@ -1,0 +1,12 @@
+{
+  "name": "Soumyajit Behera",
+  "profession": "Software Developer",
+  "img": "../assets/images/NavbarImg/logo.png",
+  "sections": [
+    "Home",
+    "About",
+    "Projects",
+    "Resume",
+    "Blogs"
+  ]
+}

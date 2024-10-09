@@ -22,16 +22,17 @@
         .top-rated-item {
             @include flex(column, center, center);
             gap: 20px;
-            width: 100%;
-            box-shadow: 5px 5px 25px $darkest-blue,
-            -5px -5px 25px $darkest-blue,
-            -5px 5px 25px $darkest-blue,
-            5px -5px 25px $darkest-blue;
-            border-radius: 10px;
+            width: 90%;
+            box-shadow: 1px 1px 20px #7241FF;
+            border-radius: 20px;
             padding: 50px 30px 10px 30px;
-            
+            margin-left: 38px;
             img {
-                width: 100%;
+                margin-left: 50px;
+                margin-top: 20px;
+                margin-bottom: 15px;
+                width: 80%;
+                border-radius: 30px; ;
             }
             
             .top-rated-item-content {
@@ -39,12 +40,15 @@
                 gap: 20px;
                 width: 100%;
 
-                h4 {
-                    font-size: 15px;
+                h4{
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                    font-family: 'Roboto', sans-serif;
+                    background: linear-gradient(to right,#7e33e05d , #9b73ff, rgba(8, 4, 88, 0.449));
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
                     font-weight: 500;
-                    font-variant: small-caps slashed-zero;
-                    color:#627FFF;
-                    
                 }
                 p {
                     color: #77798F;

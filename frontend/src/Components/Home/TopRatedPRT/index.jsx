@@ -10,7 +10,7 @@ function TopRating() {
             <div className="top-rated-wrapper">
                 <div className="top-rated-item">
                     <div className="top-rated-item-content">
-                        <h4>how it works</h4>
+                        <h4 className="title">How it works</h4>
                         <h2>Customize This Template</h2>
                         <p>Select this template, Enter your details, confirm and hit “Generate” for your unique portfolio.</p>
                     </div>
@@ -20,7 +20,7 @@ function TopRating() {
                 </div>
                 <div className="top-rated-item">
                     <div className="top-rated-item-content">
-                        <h4>how it works</h4>
+                        <h4>How it works</h4>
                         <h2>Customize This Template</h2>
                         <p>Select this template, Enter your details, confirm and hit “Generate” for your unique portfolio.</p>
                     </div>
@@ -31,7 +31,7 @@ function TopRating() {
                 
                 <div className="top-rated-item">
                     <div className="top-rated-item-content">
-                        <h4>how it works</h4>
+                        <h4>How it works</h4>
                         <h2>Customize This Template</h2>
                         <p>Select this template, Enter your details, confirm and hit “Generate” for your unique portfolio.</p>
                     </div>
@@ -41,7 +41,7 @@ function TopRating() {
                 </div>
                 <div className="top-rated-item">
                     <div className="top-rated-item-content">
-                        <h4>how it works</h4>
+                        <h4>How it works</h4>
                         <h2>Customize This Template</h2>
                         <p>Select this template, Enter your details, confirm and hit “Generate” for your unique portfolio.</p>
                     </div>

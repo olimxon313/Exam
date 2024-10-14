@@ -1,12 +1,45 @@
-{
-  "name": "Soumyajit Behera",
-  "profession": "Software Developer",
-  "img": "../assets/images/NavbarImg/logo.png",
-  "sections": [
-    "Home",
-    "About",
-    "Projects",
-    "Resume",
-    "Blogs"
-  ]
-}
+ {
+    "users": [
+      {
+        "id": 1,
+        "name": "Yagna Kusumanchi",
+        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
+        "portfolios": 10,
+        "views": 1349,
+        "followers": 999
+      },
+      {
+        "id": 2,
+        "name": "Another Developer",
+        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
+        "portfolios": 12,
+        "views": 1500,
+        "followers": 1050
+      },
+      {
+        "id": 2,
+        "name": "Another Developer",
+        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
+        "portfolios": 12,
+        "views": 1500,
+        "followers": 1050
+      },
+      {
+        "id": 2,
+        "name": "Another Developer",
+        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
+        "portfolios": 12,
+        "views": 1500,
+        "followers": 1050
+      },
+      {
+        "id": 2,
+        "name": "Another Developer",
+        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
+        "portfolios": 12,
+        "views": 1500,
+        "followers": 1050
+      }
+    ]
+  }
+  

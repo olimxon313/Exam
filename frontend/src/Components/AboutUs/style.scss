@@ -1,0 +1,99 @@
+.about-us {
+    background-color: #010314;
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      cursor: pointer;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: #ffffff;
+    }
+  
+    .about-description {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+  
+      span {
+        color: #9d00ff;
+        font-weight: bold;
+      }
+    }
+  
+    .team {
+      margin-top: 3rem;
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+        color: #ffffff;
+      }
+  
+      .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #1a1a2e;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.1s ease-out, border-color 0.3s ease;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        border: 3px solid transparent;
+  
+        &:hover {
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+          border-color: #9d00ff;
+        }
+  
+        .member-info {
+          margin-bottom: 1.5rem;
+        }
+  
+        .team-image {
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          margin-bottom: 1rem;
+          border: 3px solid #9d00ff;
+          transition: transform 0.3s ease, border-color 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.1);
+            border-color: #ff00cc;
+          }
+        }
+  
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 0.5rem;
+          color: #ffffff;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #ccc;
+        }
+  
+        .member-bio {
+          margin-top: 1.5rem;
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: #dcdcdc;
+          max-width: 600px;
+        }
+      }
+    }
+  }
+  

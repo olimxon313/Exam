@@ -7,9 +7,10 @@ function Footer() {
                 <h2 className="footer-title">Company</h2>
                 <p className="footer-description">Find us here!</p>
                 <div className="socials">
-                    <a href="#" className="social-link">LinkedIn</a>
-                    <a href="#" className="social-link">GitHub</a>
-                    <a href="#" className="social-link">Twitter</a>
+                    <a href="https://www.linkedin.com/in/olimxon-akhmatov-b2343532a/"  className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.instagram.com/olimxon__313/"  className="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://github.com/olimxon313" target="_blank" rel="noopener noreferrer"  className="social-link">GitHub</a>
+                    <a href="https://t.me/olimx9n" className="social-link">Telegram</a>
                 </div>
             </div>
             <div className="footer-bottom">

@@ -13,7 +13,6 @@ function Home() {
             <TopRating />
             <SetUp />
             <RecentUsers /> {}
-            <Footer />
         </div>
     );
 }

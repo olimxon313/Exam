@@ -25,14 +25,14 @@ function Registration() {
                 const newUserId = lastUserId + 1;
 
                 await axios.post(`${BASE_URL}/users`, {
-                    id: newUserId, 
+                    id: newUserId,
                     username: form.username,
                     email: form.email,
                     password: form.password,
                 });
 
                 toast.success("Account created successfully!", { theme: "dark" });
-                
+
                 setForm({
                     username: "",
                     email: "",

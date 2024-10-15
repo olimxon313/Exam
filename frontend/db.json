@@ -1,10 +1,4 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "username": "Tomas",
-      "email": "Olimxon44301@gmail.com",
-      "password": "qweqwe"
-    }
-  ]
+  "users": [],
+  "loggedUsers": []
 }

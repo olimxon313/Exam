@@ -36,10 +36,7 @@ nav {
             }
         }
         .buttons{
-            display: flex;
-            flex: 1;
-            justify-content:flex-end;
-            gap: 10px;
+            margin-left: 100px;
             button {
                 background-color: transparent;
                 padding: 10px 25px;

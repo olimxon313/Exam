@@ -16,10 +16,10 @@ function Nav() {
                 <NavLink to="aboutUs" activeclassname="active">About Us</NavLink>
                 <NavLink to="contact" activeclassname="active">Contact</NavLink>
                 <div className="buttons">
-                    <NavLink to="/login"> {/* Изменяем на NavLink для страницы входа */}
+                    <NavLink to="/login"> 
                         <button className="signup">Sign in</button>
                     </NavLink>
-                    <NavLink to="/register"> {/* Изменяем на NavLink для страницы регистрации */}
+                    <NavLink to="/register"> 
                         <button className="login">Sign up</button>
                     </NavLink>
                 </div>

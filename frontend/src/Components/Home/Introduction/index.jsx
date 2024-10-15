@@ -1,8 +1,14 @@
 import "./style.scss"
 import "../../../assets/styles/_setting.scss"
 import IMG from "../../../assets/images/IntroductionImg/intro.png"
+import { useNavigate } from "react-router-dom";
 
  function Introduction() {
+    const navigate = useNavigate(); 
+
+    const handleClick = () => {
+        navigate('./Donate'); 
+    };
     return ( 
         <div className="introduction">
             <div className="left">
@@ -12,8 +18,9 @@ import IMG from "../../../assets/images/IntroductionImg/intro.png"
                 <p className="description">Showcase your journey by crafting a personal portfolio in <br /> minutes</p>
                 <br />
                 <div className="buttons">
-                <button className="signup">Get started for free</button>
-                <button className="login">Watch Video</button>
+
+                <button className="signup" onClick={handleClick}>Get started for free</button>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button className="login">Watch Video</button></a>
                 </div>
             </div>
             <div className="right">

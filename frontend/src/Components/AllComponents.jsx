@@ -8,6 +8,7 @@ import AboutUs from './AboutUs'
 import Login from './Authentication/Login/Login.jsx'
 import Registration from './Authentication/Registration/Register.jsx'
 import Authentication from './Authentication'
+import Donate from './Home/Donate/index.jsx'
 
 function AllComponents() {
     return (
@@ -21,6 +22,7 @@ function AllComponents() {
                 <Route path="login" element={<Login />} />
                 <Route path="register" element={<Registration />} />
                 <Route path="auth" element={<Authentication />} />
+                <Route path="donate" element={<Donate />} />
             </Route>
         </Routes>
     )

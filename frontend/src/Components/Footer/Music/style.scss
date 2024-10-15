@@ -1,0 +1,137 @@
+@import '../../../assets/styles/_setting.scss';
+
+.music-player {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+
+    button {
+        background-color: #7241FF;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #5e34c7;
+        }
+    }
+
+    .progress-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .progress-bar {
+        width: 200px;
+        appearance: none;
+        background: transparent;
+        height: 5px;
+        border-radius: 5px;
+        position: relative;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            position: relative;
+            bottom: 3px;
+            width: 15px;
+            height: 15px;
+            background: #7241FF;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
+        }
+
+        &::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            background: #7241FF;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
+        }
+
+        &::-webkit-slider-runnable-track {
+            height: 5px;
+            background: rgba(114, 65, 255, 0.3);
+            border-radius: 5px;
+            position: relative;
+        }
+
+        &::-moz-range-track {
+            height: 5px;
+            background: rgba(114, 65, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 5px;
+            background: #7241FF;
+            border-radius: 5px;
+            top: 0;
+            left: 0;
+            width: 0;
+            transition: width 0.2s;
+        }
+    }
+
+    .bubbles {
+        width: 13%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    
+        .bubble {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: bubble-scale 0.5s infinite alternate;
+            background-color: rgba(random(255), random(255), random(255), 0.5); // Используем random() в Sass
+    
+            &:nth-child(1) {
+                animation-delay: 0s;
+            }
+    
+            &:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+    
+            &:nth-child(3) {
+                animation-delay: 0.4s;
+            }
+        }
+    }    
+}
+
+@keyframes bubble-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes bubble-scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}

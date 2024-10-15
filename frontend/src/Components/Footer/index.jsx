@@ -10,7 +10,7 @@ function Footer() {
                     <a href="https://www.linkedin.com/in/olimxon-akhmatov-b2343532a/"  className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="https://www.instagram.com/olimxon__313/"  className="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
                     <a href="https://github.com/olimxon313" target="_blank" rel="noopener noreferrer"  className="social-link">GitHub</a>
-                    <a href="https://t.me/olimx9n" className="social-link">Telegram</a>
+                    <a href="https://t.me/olimx9n" target="_blank" rel="noopener noreferrer" className="social-link">Telegram</a>
                 </div>
             </div>
             <div className="footer-bottom">

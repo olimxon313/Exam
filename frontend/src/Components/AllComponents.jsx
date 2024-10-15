@@ -5,6 +5,9 @@ import Home from './Home'
 import Portfolio from './Portfolio'
 import Community from './Community'
 import AboutUs from './AboutUs'
+import Login from './Authentication/Login/Login.jsx'
+import Registration from './Authentication/Registration/Register.jsx'
+import Authentication from './Authentication'
 
 function AllComponents() {
     return (
@@ -15,6 +18,9 @@ function AllComponents() {
                 <Route path="portfolio" element={<Portfolio />} />
                 <Route path="community" element={<Community />} />
                 <Route path="aboutUs" element={<AboutUs />} />
+                <Route path="login" element={<Login />} />
+                <Route path="register" element={<Registration />} />
+                <Route path="auth" element={<Authentication />} />
             </Route>
         </Routes>
     )

@@ -1,0 +1,77 @@
+@import "../../../assets/styles/_setting.scss";
+
+.login-container {
+  background-color: #010314; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; 
+  color: white;
+
+  .login-form-container {
+    max-width: 600px;
+    width: 100%; 
+    padding: 30px;
+    background-color: #121324ca; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(177, 155, 155, 0.5); 
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: $light;
+      font-size: 24px;
+    }
+
+    .login-form {
+      display: grid;
+      gap: 15px;
+    }
+
+    .form-group {
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: $light;
+      }
+
+      input {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        border: 1px solid #2A2B3A;
+        border-radius: 8px;
+        background-color: #1E1F2A;
+        color: white;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: $violet;
+          outline: none;
+        }
+      }
+    }
+
+    .submit-button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background-color: transparent;
+      border: 2px solid #2A2B3A;
+      border-radius: 25px;
+      color: $light;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-color: #7241FF;
+        box-shadow: 1px 1px 15px #7241FF;
+        background-color: #1E1F2A;
+      }
+    }
+  }
+}

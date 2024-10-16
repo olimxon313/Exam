@@ -1,45 +1,16 @@
- {
-    "users": [
-      {
-        "id": 1,
-        "name": "Yagna Kusumanchi",
-        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
-        "portfolios": 10,
-        "views": 1349,
-        "followers": 999
-      },
-      {
-        "id": 2,
-        "name": "Another Developer",
-        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
-        "portfolios": 12,
-        "views": 1500,
-        "followers": 1050
-      },
-      {
-        "id": 2,
-        "name": "Another Developer",
-        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
-        "portfolios": 12,
-        "views": 1500,
-        "followers": 1050
-      },
-      {
-        "id": 2,
-        "name": "Another Developer",
-        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
-        "portfolios": 12,
-        "views": 1500,
-        "followers": 1050
-      },
-      {
-        "id": 2,
-        "name": "Another Developer",
-        "description": "Author of 'Python 3.0 for Beginners' and a Full Stack Developer passionate about creating dynamic and user-friendly web experiences.",
-        "portfolios": 12,
-        "views": 1500,
-        "followers": 1050
-      }
-    ]
+[
+  {
+      "name": "Portfolio 1",
+      "category": "Category 1",
+      "description": "Description 1",
+      "likes": 99,
+      "views": 999
+  },
+  {
+      "name": "Portfolio 2",
+      "category": "Category 2",
+      "description": "Description 2",
+      "likes": 45,
+      "views": 123
   }
-  
+]

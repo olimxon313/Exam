@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import portfolioData from '../../db/portfolio.json';
+import portfolioData from '../../db/port.json';
 import IMG from "../../assets/Images/RecentUsers/userPerson.png"
 import "./style.scss";
 

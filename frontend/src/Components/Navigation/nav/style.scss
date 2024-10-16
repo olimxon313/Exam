@@ -15,27 +15,37 @@ nav {
         
         .logo {
             width: 100%;
-            cursor:auto;
+            text-align: left;
+            cursor: auto;
+            
             img {
                 cursor: pointer;
             }
+            &.active{
+                border-bottom: none;
+            }
         }
+
         a {
             color: $light;
             text-decoration: none;
             padding: 10px 15px;
             border-radius: 5px;
             flex: 1; 
-
+            text-align: center;
+            transition: color 0.3s ease, border-color 0.3s ease;
             &.active {
                 color: white;
+                border-bottom: 2px solid $violet;
             }
 
+            
             &:hover {
                 color: $violet;
             }
         }
-        .buttons{
+
+        .buttons {
             margin-left: 100px;
             button {
                 background-color: transparent;
@@ -46,7 +56,12 @@ nav {
                 cursor: pointer;
             }
             
-            & button:hover {
+            button:hover {
+                border: 2px #7241FF solid;
+                box-shadow: 1px 1px 10px #7241FF;
+            }
+
+            button.active {
                 border: 2px #7241FF solid;
                 box-shadow: 1px 1px 10px #7241FF;
             }

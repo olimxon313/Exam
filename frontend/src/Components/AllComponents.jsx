@@ -8,7 +8,7 @@ import AboutUs from './AboutUs'
 import Login from './Authentication/Login/Login.jsx'
 import Registration from './Authentication/Registration/Register.jsx'
 import Authentication from './Authentication'
-import Donate from './Home/Donate/index.jsx'
+import Donate from './Home/Donate/index.jsx'    
 
 function AllComponents() {
     return (

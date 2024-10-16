@@ -1,4 +1,18 @@
 {
-  "users": [],
-  "loggedUsers": []
+  "users": [
+    {
+      "id": 1,
+      "username": "Olimxon",
+      "email": "olimxon401@gmail.com",
+      "password": "yamolo567"
+    }
+  ],
+  "loggedUsers": [
+    {
+      "id": 1,
+      "username": "Olimxon",
+      "email": "olimxon401@gmail.com",
+      "loginTime": "2024-10-16T04:29:15.255Z"
+    }
+  ]
 }

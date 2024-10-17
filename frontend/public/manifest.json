@@ -1,0 +1,30 @@
+{
+    "name": "Click Craft",
+    "short_name": "Craft",
+    "icons": [
+      {
+        "src": "/favicon.ico",
+        "sizes": "32x32 16x16",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "./",
+    "theme_color": "#0A0A0A",
+    "background_color": "#0A0A0A",
+    "display": "standalone",
+    "scope": "/",
+    "orientation": "portrait",
+    "description": "Site for creating portfolios",
+    "lang": "en-US",
+    "dir": "ltr"
+  }

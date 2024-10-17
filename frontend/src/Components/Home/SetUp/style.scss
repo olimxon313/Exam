@@ -1,79 +1,136 @@
 @import "../../../assets/styles/_setting.scss";
 
-.set-up-title{
+// Основные стили для десктопа
+.set-up-title {
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
     background-color: #010314;
+
     h1 {
-        font-size: 50px;
-        font-weight: 500;
-        color: $light;  
-        margin-bottom: 20px;
-    }
-    p {
-        background: linear-gradient(to right, red, #9b73ff, #7E33E0);
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 25px;
-        font-family: 'Roboto', sans-serif;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-}
-.set-up {
-    padding: 50px 0;
-    background-color: #010314;
-    padding: 50px 130px;
-    
-    .set-up-wrapper {
-        @include grid(2, 1fr);
-        gap: 40px;
-        margin-left: 70px;
-        margin-top: 0px;
-    .left{
-        img {
-            width: 88%;
-        }
-    }
-    .right {
-        .title{
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 50px;
-        font-family: 'Roboto', sans-serif;
-        background: linear-gradient(to right, #9b73ff, red, #7E33E0);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        }
-        p {
-            color: #77798F;
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 25px;
-            font-family: 'Roboto', sans-serif;
-        }
-        h1{
-            font-size: 45px;
-            font-weight: 500;
-            color: $light;  
-            margin-bottom: 30px;
-        }
-            button {
-                background-color: transparent;
-                padding: 15px 25px;
-                margin-top: 30px;
-                border-radius: 20px;
-                border: 2px #2A2B3A solid;
-                color: $light;
-                cursor: pointer;
-                transition: border 0.3s ease, box-shadow 0.3s ease;
-                &:hover {
-                    border: 2px #7E33E0 solid;
-                    box-shadow: 0 0 10px #7E33E0;
-                }
-        } }
+        font-size: 24px;
+        font-weight: 600;
+        color: $light;
+        margin-bottom: 15px;
     }
 
+    p {
+        font-size: 16px;
+        color: #77798F;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.set-up {
+    background-color: #010314;
+    padding: 20px;
+
+    .set-up-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        border: 2px solid rgba(126, 51, 224, 0.5);
+        box-shadow: 0 0 15px rgba(126, 51, 224, 0.7);
+        padding: 30px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .left {
+        img {
+            width: 150px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .right {
+        text-align: center;
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 500;
+            color: $light;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #77798F;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background-color: transparent;
+            padding: 15px 25px;
+            border-radius: 30px;
+            border: 2px solid rgba(126, 51, 224, 0.5);
+            color: $light;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(126, 51, 224, 0.7);
+            &:hover {
+                border: 2px solid rgba(126, 51, 224, 1);
+                box-shadow: 0 0 20px rgba(126, 51, 224, 1);
+            }
+        }
+    }
+}
+
+// Стили для мобильной версии
+@media (max-width: $small) {
+    .set-up-title {
+        padding: 20px 0;
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #77798F;
+        }
+    }
+
+    .set-up {
+        padding: 20px;
+
+        .set-up-wrapper {
+            max-width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(126, 51, 224, 0.5);
+            box-shadow: 0 0 15px rgba(126, 51, 224, 0.7);
+        }
+
+        .left img {
+            width: 120px; // Уменьшение размера изображения
+        }
+
+        .right {
+            h1 {
+                font-size: 20px; // Уменьшение размера заголовка
+            }
+
+            p {
+                font-size: 12px; // Уменьшение размера текста
+            }
+
+            button {
+                padding: 10px 20px; // Уменьшение отступов кнопки
+            }
+        }
+    }
 }

@@ -7,7 +7,7 @@ function SetUp() {
         <>
         <div className="set-up-title">
         <h1>5 minute set-up process</h1>
-        <p>Just take 5 minutes to fill in some info, choose a killer template, and <br />
+        <p className="descriptionnn">Just take 5 minutes to fill in some info, choose a killer template, and <br />
             bam! Your personalized portfolio website is ready.</p>
         </div>
         <div className="set-up">
@@ -26,7 +26,9 @@ function SetUp() {
                             to share your portfolio with everyone. Boost your <br />
                             online presence the easy way!
                         </p>
+                        <a href="/portfolio">
                         <button className="signup">Complete Your Profile</button>
+                        </a>
                     </div>
                 </div>
             </div>

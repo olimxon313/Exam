@@ -1,4 +1,4 @@
-// Donate.scss
+@import "../../../assets/styles/_setting.scss";
 
 $background-color: #f0f8ff;
 $header-color: #ff4500;
@@ -17,6 +17,7 @@ $button-hover-color: #e03e00;
     h1 {
         color: $header-color; 
         font-size: 2.5rem; 
+        text-align: center; 
     }
 
     p {
@@ -38,6 +39,74 @@ $button-hover-color: #e03e00;
 
         &:hover {
             background-color: $button-hover-color; 
+        }
+    }
+}
+
+@media (max-width: $x-large) {
+    .donate-container {
+        h1 {
+            font-size: 2rem; 
+        }
+
+        p {
+            font-size: 1.15rem; 
+        }
+
+        button {
+            padding: 8px 18px; 
+            font-size: 0.9rem; 
+        }
+    }
+}
+
+@media (max-width: $large) {
+    .donate-container {
+        h1 {
+            font-size: 1.75rem; 
+        }
+
+        p {
+            font-size: 1rem; 
+        }
+
+        button {
+            padding: 7px 16px; 
+            font-size: 0.85rem; 
+        }
+    }
+}
+
+@media (max-width: $medium) {
+    .donate-container {
+        h1 {
+            font-size: 1.5rem; 
+        }
+
+        p {
+            font-size: 0.9rem; 
+        }
+
+        button {
+            padding: 6px 14px; 
+            font-size: 0.8rem; 
+        }
+    }
+}
+
+@media (max-width: $small) {
+    .donate-container {
+        h1 {
+            font-size: 1.25rem; 
+        }
+
+        p {
+            font-size: 0.8rem; 
+        }
+
+        button {
+            padding: 5px 12px; 
+            font-size: 0.75rem; 
         }
     }
 }

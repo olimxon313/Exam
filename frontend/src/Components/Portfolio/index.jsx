@@ -14,6 +14,10 @@ const Portfolio = () => {
     setPortfolios([...portfolios, newPortfolio]);
   };
 
+  const deletePortfolio = (index) => {
+    setPortfolios(portfolios.filter((item, i) => i !== index));
+  };
+
   const toggleDescription = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
@@ -27,7 +31,7 @@ const Portfolio = () => {
           <div className="portfolio" key={index}>
             <img style={{ maxHeight: '188px' }} src={item.image || IMG} alt="" />
             <div className="portfolio-content">
-              <button className="customize">Customize This</button>
+              <button className="delete" onClick={() => deletePortfolio(index)}>Delete This</button>
               <div className='likes'><FaRegHeart /> {item.likes}</div>
               <div className='views'><MdRemoveRedEye /> {item.views}</div>
               {item.description && (
@@ -53,4 +57,5 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
 

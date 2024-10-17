@@ -7,6 +7,7 @@
     background-color: #010314;
     text-align: center;
     padding: 100px 130px;
+
     .left {
         p {
             background: linear-gradient(to right, red, #9b73ff, #7E33E0);
@@ -14,42 +15,163 @@
             font-weight: 500;
             margin-bottom: 25px;
             font-family: 'Roboto', sans-serif;
-            -webkit-background-clip: text; 
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .buttons{
+
+        .buttons {
             button {
                 margin-right: 20px;
                 background-color: transparent;
-                padding: 11px 25px;
+                padding: 14px 28px;
                 border-radius: 20px;
                 border: 2px #2A2B3A solid;
                 color: $light;
                 cursor: pointer;
             }
-            
-            & button:hover {
+
+            button:hover {
                 border: 2px #7241FF solid;
                 box-shadow: 1px 1px 10px #7241FF;
             }
         }
+
         h1 {
             font-size: 50px;
             font-weight: 500;
-            color: $light;  
+            color: $light;
             margin-bottom: 20px;
         }
+
         .description {
-            color: $light;
+            color: #77798F;
             font-size: 20px;
             font-weight: 300;
         }
     }
-    .right {
 
+    .right {
         img {
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: $x-large) {
+    .introduction {
+        padding: 80px 100px;
+
+        .left {
+            h1 {
+                font-size: 45px;
+            }
+
+            .description {
+                font-size: 18px;
+            }
+
+            .buttons {
+                button {
+                    padding: 10px 22px;
+                }
+            }
+        }
+
+        .right {
+            img {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: $large) {
+    .introduction {
+        padding: 70px 80px;
+
+        .left {
+            h1 {
+                font-size: 40px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .buttons {
+                button {
+                    padding: 9px 20px; // Уменьшаем отступы для large экранов
+                }
+            }
+        }
+
+        .right {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: $medium) {
+    .introduction {
+        padding: 50px 40px;
+
+        .left {
+            h1 {
+                font-size: 36px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .buttons {
+                button {
+                    padding: 8px 18px; // Уменьшаем отступы для medium экранов
+                }
+            }
+        }
+
+        .right {
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: $small) {
+    .introduction {
+        padding: 30px 20px;
+
+        .left {
+            h1 {
+                font-size: 30px;
+            }
+
+            .description {
+                font-size: 12px;
+            }
+
+            .buttons {
+                position: relative;
+                bottom: 10px;
+                padding: 0px 30px 0px 30px;
+                width: 100%;
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                button {
+                    padding:10px 20px;
+                    margin-top: 12px ;
+                    width: 100%;
+                }
+            }
+        }
+
+        .right {
+            display: none;
         }
     }
 }

@@ -6,10 +6,10 @@
     padding: 50px;
     background-color: $background-dark;
     color: $light;
-    
+
     h1 {
         font-size: 30px;
-        display:block;
+        display: block;
     }
 
     .top-rated-wrapper {
@@ -17,8 +17,7 @@
         padding: 100px 50px;
         gap: 70px;
         width: 100%;
-        
-        
+
         .top-rated-item {
             @include flex(column, center, center);
             gap: 20px;
@@ -26,32 +25,112 @@
             box-shadow: 1px 1px 20px #7241FF;
             border-radius: 20px;
             padding: 50px 30px 10px 30px;
-            margin-left: 38px;
+            margin-left: 20px;
+
             img {
                 margin-left: 50px;
                 margin-top: 20px;
                 margin-bottom: 15px;
                 width: 80%;
-                border-radius: 30px; ;
+                border-radius: 30px;
             }
-            
+
             .top-rated-item-content {
                 @include flex(column, start, center);
                 gap: 20px;
                 width: 100%;
 
-                h4{
+                h4 {
                     font-size: 20px;
                     margin-bottom: 25px;
                     font-family: 'Roboto', sans-serif;
-                    background: linear-gradient(to right,#7e33e05d , #9b73ff, rgba(8, 4, 88, 0.449));
+                    background: linear-gradient(to right, #7e33e05d, #9b73ff, rgba(8, 4, 88, 0.449));
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
                     background-clip: text;
                     font-weight: 500;
                 }
+
                 p {
                     color: #77798F;
+                }
+            }
+        }
+    }
+
+    // Медиа-запросы для адаптивной верстки
+    @media (max-width: $large) {
+        .top-rated-wrapper {
+            @include grid(1, 1fr); // На больших экранах сетка в 2 колонки
+        }
+
+        .top-rated-item {
+            width: 100%; // Увеличиваем ширину элементов на маленьких экранах
+            img {
+                width: 100%; // Картинка растягивается по ширине элемента
+                margin-left: 0;
+            }
+        }
+    }
+
+    @media (max-width: $medium) {
+        padding: 30px;
+        h1 {
+            font-size: 26px;
+        }
+
+        .top-rated-wrapper {
+            gap: 40px;
+        }
+
+        .top-rated-item {
+            margin-left: 10px;
+            img {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .top-rated-item-content {
+                h4 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $small) {
+        padding: 20px;
+
+        h1 {
+            font-size: 22px;
+        }
+
+        .top-rated-wrapper {
+        padding: 50px 0px;
+        gap: 30px;
+        }
+
+        .top-rated-item {
+            padding: 30px 15px;
+            
+           .top-rated-item-img{
+            img {
+                width: 100%;
+                margin-left: 0;
+            }
+           }
+
+            .top-rated-item-content {
+                h4 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 12px;
                 }
             }
         }

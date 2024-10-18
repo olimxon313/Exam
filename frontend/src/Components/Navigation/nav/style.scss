@@ -31,58 +31,57 @@ nav {
                 }
             }
         }
-    }
 
-    .second {
-        .links {
-            @include grid(6, 1fr, 20px);
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 3fr;
-            gap: 20px;
-            width: 100%;
-            text-align: center;
-            margin-left: 50px;
-
-            a {
-                height: 40px;
-                color: $light;
-                text-decoration: none;
-                padding: 10px 15px;
-                border-radius: 5px;
-                flex: 1;
+        .second {
+            .links {
+                @include grid(6, 1fr, 20px);
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 3fr;
+                gap: 20px;
+                width: 100%;
                 text-align: center;
-                transition: color 0.3s ease, border-color 0.3s ease;
-
-                &.active {
-                    color: white;
-                    border-bottom: 2px solid $violet;
-                }
-
-
-                &:hover {
-                    color: $violet;
-                }
-            }
-
-            .buttons {
                 margin-left: 50px;
 
-                button {
-                    background-color: transparent;
-                    padding: 10px 25px;
-                    border-radius: 20px;
-                    border: 2px #2A2B3A solid;
+                a {
+                    height: 40px;
                     color: $light;
-                    cursor: pointer;
+                    text-decoration: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    flex: 1;
+                    text-align: center;
+                    transition: color 0.3s ease, border-color 0.3s ease;
+
+                    &.active {
+                        color: white;
+                        border-bottom: 2px solid $violet;
+                    }
+
+                    &:hover {
+                        color: $violet;
+                    }
                 }
 
-                button:hover {
-                    border: 2px #7241FF solid;
-                    box-shadow: 1px 1px 10px #7241FF;
-                }
+                .buttons {
+                    margin-left: 50px;
 
-                button.active {
-                    border: 2px #7241FF solid;
-                    box-shadow: 1px 1px 10px #7241FF;
+                    button {
+                        background-color: transparent;
+                        padding: 10px 25px;
+                        border-radius: 20px;
+                        border: 2px #2A2B3A solid;
+                        color: $light;
+                        cursor: pointer;
+                    }
+
+                    button:hover {
+                        border: 2px #7241FF solid;
+                        box-shadow: 1px 1px 10px #7241FF;
+                    }
+
+                    button.active {
+                        border: 2px #7241FF solid;
+                        box-shadow: 1px 1px 10px #7241FF;
+                    }
                 }
             }
         }
@@ -108,7 +107,6 @@ nav {
     }
 }
 
-
 @media (max-width: $xx-large) {
     nav {
         .main {
@@ -121,7 +119,6 @@ nav {
             }
         }
     }
-
 }
 
 @media (max-width: $x-large) {
@@ -148,13 +145,15 @@ nav {
             .second {
                 .links {
                     margin-left: 30px;
-                    a{
-                        font-size: 12px;
-                height: 38px;
 
+                    a {
+                        font-size: 12px;
+                        height: 38px;
                     }
+
                     .buttons {
                         margin-left: 0px;
+
                         button {
                             padding: 9px 15px;
                             font-size: 12px;
@@ -168,11 +167,33 @@ nav {
 
 @media (max-width: $medium) {
     nav {
-        .main{
+        .main {
             .second {
                 display: none;
             }
+        }
 
+        &.open {
+            .main {
+                .second {
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    right: 40px;
+                    height: 150vh;
+                    .links {
+                        padding: 50px;
+                        position: relative;
+                        bottom: 30px;
+                        width: 100%;
+                        background-color: rgba(0, 0, 0, 0.169);
+                        backdrop-filter: blur(10px);
+                        @include flex(column, center, center, 0);
+                        gap: 20px;
+                        text-align: center;
+                    }
+                }
+            }
         }
 
         #burger-menu-wrapper {
@@ -182,10 +203,10 @@ nav {
             display: block;
             gap: 6px;
             width: 40px;
-            div{
+
+            div {
                 width: 100%;
                 height: 5px;
-                background: white;
                 margin-top: 5px;
             }
         }
